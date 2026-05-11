@@ -1,0 +1,12 @@
+py3env/
+chunks/
+update_tmp/
+lintmp/
+results/
+work/
+.nextflow/
+.nextflow.log*
+*.fna.gz
+*.fasta.gz
+*.csv
+__pycache__/
