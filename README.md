@@ -5,7 +5,7 @@ Hierarchical dereplication and clustering pipeline for the VirJenDB viral genome
 ## Dependencies
 
 - Python 3.9+ with `biopython` and `pandas`
-- [MMseqs2](https://github.com/soedinglab/MMseqs2) (v14+)
+- [MMseqs2](https://github.com/soedinglab/MMseqs2) (v14+, only needed for Phase 1)
 - [vclust](https://github.com/refresh-bio/vclust) (v1.3+)
 
 ## Quick Start
@@ -26,6 +26,10 @@ scripts/       Bash reference implementation
 nextflow/      Nextflow pipeline skeleton
 test_data/     Test datasets
 ```
+
+## Hackathon
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for task descriptions, branch conventions, and getting started. The hackathon focuses on Phase 2 (update clustering) and the Nextflow implementation — MMseqs2 is not required.
 
 ---
 
@@ -103,9 +107,3 @@ Generates 20 random sequences (with some duplicates) plus 10 from existing reps,
 | vclust `--ani` | 0.95 | ANI threshold for Leiden clustering |
 | vclust `--qcov` | 0.85 | Query coverage threshold |
 | Leiden algorithm | community detection | Resolves transitive clusters |
-
----
-
-## Hackathon
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for task descriptions, branch conventions, and getting started.
