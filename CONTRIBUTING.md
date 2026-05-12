@@ -23,7 +23,7 @@ Nextflow's `bin/` convention: any executable in `bin/` at the pipeline root is a
 
 ## Tasks
 
-### Task 1 — Identify Caveats (Days 1–2)
+### Task 1 — Identify Caveats
 
 Analyze the current workflow for edge cases and consistency issues. For each finding, **open a GitHub Issue on your fork** with:
 
@@ -37,9 +37,8 @@ Starting points to investigate (not exhaustive):
 - What happens when a new sequence bridges two existing clusters?
 - Is cluster identity stable across updates?
 - Are there ordering effects (does the result depend on the sequence order in the input)?
-- How does chunking affect cluster boundaries?
 
-### Task 2 — Fix and Improve (Day 3)
+### Task 2 — Fix and Improve
 
 Pick issues from your Task 1 findings and implement fixes.
 
@@ -48,7 +47,7 @@ Pick issues from your Task 1 findings and implement fixes.
 - One branch per fix — keeps reviews manageable.
 - Run `bash scripts/run_test.sh` before pushing to make sure nothing is broken.
 
-### Task 3 — Nextflow Pipeline (Days 4–5)
+### Task 3 — Nextflow Pipeline
 
 Implement the pipeline in the `nextflow/` directory. A skeleton is provided with `main.nf`, `nextflow.config`, and module stubs in `nextflow/modules/`.
 
