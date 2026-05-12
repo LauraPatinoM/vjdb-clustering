@@ -25,7 +25,7 @@ Nextflow's `bin/` convention: any executable in `bin/` at the pipeline root is a
 
 ### Task 1 — Identify Caveats
 
-Analyze the current workflow for edge cases and consistency issues. For each finding, **open a GitHub Issue in this repo** with:
+Analyze the current workflow for edge cases, consistency issues, or general ideas of how to improve. For each finding, **open a GitHub Issue in this repo** with:
 
 - A clear title (e.g. "Cluster merging on update can reassign existing sequences")
 - A description of the problem
@@ -36,7 +36,8 @@ Starting points to investigate (not exhaustive):
 
 - What happens when a new sequence bridges two existing clusters?
 - Is cluster identity stable across updates?
-- Are there ordering effects (does the result depend on the sequence order in the input)?
+- Automatic testing and reporting of the changes.
+- ... (come up with your own)
 
 ### Task 2 — Fix and Improve
 

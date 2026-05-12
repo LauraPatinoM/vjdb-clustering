@@ -8,7 +8,7 @@ from Bio.SeqRecord import SeqRecord
 random.seed(42)
 
 reps_file = "vjdb1_merged_reps.fna.gz"
-out_file = "test_new_sequences.fasta.gz"
+out_file = "vjdb1_test_new_sequences.fna.gz"
 
 records = []
 

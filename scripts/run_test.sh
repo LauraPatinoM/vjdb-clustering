@@ -26,7 +26,7 @@ echo "Test data generated. Running update pipeline..."
 
 # --- Step 1: Prepare combined FASTA ---
 python3 bin/5_prepare_update.py \
-    --new-seqs test_new_sequences.fasta.gz \
+    --new-seqs vjdb1_test_new_sequences.fna.gz \
     --existing-reps vjdb1_merged_reps.fna.gz \
     --outdir "$TMPDIR"
 
@@ -50,6 +50,6 @@ rm -f "$TMPDIR/ani.tsv" "$TMPDIR/fltr.txt" "$TMPDIR/ani.ids.tsv"
 python3 bin/6_finalize_update.py \
     --outdir "$TMPDIR" \
     --existing-csv vjdb1_merged_reps.csv \
-    --output-prefix vjdb1
+    --output-prefix vjdb1_test
 
-echo "Done. Check vjdb1_new_clusters.csv for test sequence assignments."
+echo "Done. Check vjdb1_test_new_clusters.csv for test sequence assignments."
