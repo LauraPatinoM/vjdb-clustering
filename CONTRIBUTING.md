@@ -25,7 +25,7 @@ Nextflow's `bin/` convention: any executable in `bin/` at the pipeline root is a
 
 ### Task 1 — Identify Caveats
 
-Analyze the current workflow for edge cases and consistency issues. For each finding, **open a GitHub Issue on your fork** with:
+Analyze the current workflow for edge cases and consistency issues. For each finding, **open a GitHub Issue in this repo** with:
 
 - A clear title (e.g. "Cluster merging on update can reassign existing sequences")
 - A description of the problem
